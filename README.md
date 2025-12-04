@@ -10,6 +10,7 @@ Join our growing community to stay updated on rewards, token launches, and exclu
 🌐 [https://tether-erc20.site](https://tether-erc20.site)
 
 ## Social Accounts
+- **Discord:** [https://discord.com/invite/DzhUsZaRpa](https://discord.com/invite/DzhUsZaRpa)
 - **X/Twitter:** [https://x.com/TERC20_official](https://x.com/TERC20_official)
 - **Facebook:** [https://web.facebook.com/profile.php?id=61584499748423](https://web.facebook.com/profile.php?id=61584499748423)
 - **Telegram:** [https://t.me/Tetherieumerc20](https://t.me/Tetherieumerc20)
@@ -36,8 +37,9 @@ Participate in our giveaways through our community channels. Stay active—you c
 
 ## How to Join
 1. Visit our website: [https://tether-erc20.site](https://tether-erc20.site)  
-2. Follow updates on social accounts  
-3. Participate in giveaways and earn rewards!  
+2. Join Discord: [https://discord.com/invite/DzhUsZaRpa](https://discord.com/invite/DzhUsZaRpa)  
+3. Follow updates on other social accounts  
+4. Participate in giveaways and earn rewards!  
 
 ---
 
