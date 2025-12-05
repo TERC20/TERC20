@@ -1,0 +1,212 @@
+\documentclass[11pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault]{roboto} % Modern sans-serif font
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{tcolorbox} % For the roadmap boxes
+\usepackage{colortbl}  % For table coloring
+\usepackage{booktabs}  % For professional table lines
+\usepackage{titlesec}  % To customize section headers
+\usepackage{fancyhdr}  % For headers and footers
+
+% --- Configuration ---
+\geometry{margin=1in}
+
+% Define Brand Colors
+\definecolor{brandBlue}{RGB}{20, 60, 120}
+\definecolor{brandLight}{RGB}{240, 245, 255}
+\definecolor{accentColor}{RGB}{0, 150, 200}
+
+% Hyperlink Setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=brandBlue,
+    urlcolor=accentColor,
+    citecolor=brandBlue
+}
+
+% Section Header Styling
+\titleformat{\section}
+  {\color{brandBlue}\normalfont\Large\bfseries}
+  {\thesection}{1em}{}[\hrule]
+
+\titleformat{\subsection}
+  {\color{brandBlue}\normalfont\large\bfseries}
+  {\thesubsection}{1em}{}
+
+% Roadmap Box Style
+\newtcolorbox{roadmapbox}[2][]{
+  colback=brandLight,
+  colframe=brandBlue,
+  fonttitle=\bfseries,
+  title={#2},
+  #1
+}
+
+% Header/Footer Setup
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{TERC20 White Paper}}
+\fancyhead[R]{\today}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\begin{document}
+
+% --- Title Page ---
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    
+    % Logo - Uncommented as requested
+    \includegraphics[width=0.5\textwidth]{USDT erc20 (1).png}
+    
+    \vspace{1.5cm}
+    
+    {\Huge \textbf{\textcolor{brandBlue}{TERC20}}} \\
+    \vspace{0.5cm}
+    {\Large \textbf{Tether USD ERC20 White Paper}}
+    
+    \vspace{2cm}
+    
+    \textbf{Author:} TERC20 Team \\
+    \textbf{Date:} \today
+    
+    \vfill
+    
+    \textit{Built on Binance Smart Chain (BSC)}
+\end{titlepage}
+
+% --- Abstract ---
+\section*{Abstract}
+\addcontentsline{toc}{section}{Abstract}
+TERC20 is a decentralized stablecoin project built on the Binance Smart Chain (BSC) aiming to provide fast transactions, community engagement, and innovative NFT initiatives. The project follows a phased roadmap to empower the community and expand the ecosystem while offering staking, rewards, and a unique Meme Vault NFT experience.
+
+% --- Project Overview ---
+\section{Project Overview}
+\begin{tcolorbox}[colback=white, colframe=brandBlue, sharp corners=south]
+\begin{itemize}
+    \item \textbf{Name:} Tether USD ERC20 (TERC20)
+    \item \textbf{Blockchain:} Binance Smart Chain (BSC)
+    \item \textbf{Total Supply:} 100,000,000,000 TERC20
+    \item \textbf{Token Price at Launch:} \$1
+    \item \textbf{Distribution:} Tokens distributed via community giveaways, staking, and NFT initiatives. No public sale.
+\end{itemize}
+\end{tcolorbox}
+
+% --- Roadmap ---
+\section{TERC20 Roadmap}
+
+\begin{roadmapbox}{Phase 1 – The Foundation Begins (July 2025 – Sept 2025)}
+\begin{itemize}
+    \item Token price starts at \$1; launch on BSC for fast transactions.
+    \item Launch of the cross-chain bridge for stablecoins.
+    \item Official launch of the TERC20 token.
+    \item Giveaways to engage the community.
+    \item Wallet integration: MetaMask, Trust Wallet, Phantom, etc.
+    \item Smart contract audit: Verification by independent auditors (e.g., CertiK).
+    \item Launch marketing: Meme campaigns and viral content on X and TikTok.
+\end{itemize}
+\end{roadmapbox}
+\vspace{0.5cm}
+
+\begin{roadmapbox}{Phase 2 – Building Momentum (Sept 2025 – Oct 2025)}
+\begin{itemize}
+    \item Community vote: Holders with 10,000+ TERC20 decide on token burning (up to 30\%) and easing the dollar peg.
+    \item Launch of TERC20 Meme Vault: Exclusive NFTs with memes, art, and hidden utility.
+    \item Holders Club: Exclusive access for top holders (bonuses, NFTs, closed events).
+    \item Partnerships: Collaborations with BSC projects (DeFi, NFT, metaverse).
+    \item Active marketing: AMAs, meme contests, NFT giveaways for community growth.
+\end{itemize}
+\end{roadmapbox}
+\vspace{0.5cm}
+
+\begin{roadmapbox}{Phase 3 – Breaking Free (Nov 2025 onwards)}
+\begin{itemize}
+    \item Large-scale token burning: Up to 30\% of tokens ($\sim$20–30 billion TERC20).
+    \item Complete decoupling from the dollar: Free market rate, preparing for a price rally.
+    \item Launch of NFT marketplace: TERC20 Meme Vault NFT trading, auction, and staking.
+    \item Staking program: Rewards for holders (20\% of tokens) with bonuses for long-term participants.
+    \item Ecosystem expansion: Integration with DeFi protocols, games, and metaverses.
+    \item Global marketing: Strengthening presence on X, TikTok, and influencer partnerships.
+\end{itemize}
+\end{roadmapbox}
+
+% --- Tokenomics ---
+\newpage
+\section{Tokenomics}
+\renewcommand{\arraystretch}{1.5}
+\begin{longtable}{ p{4.5cm} c c p{4cm} }
+\toprule
+\rowcolor{brandBlue} \textbf{\textcolor{white}{Category}} & \textbf{\textcolor{white}{Percent}} & \textbf{\textcolor{white}{Quantity (TERC20)}} & \textbf{\textcolor{white}{Description}} \\
+\midrule
+Community \& Airdrops & 50\% & 50,000,000,000 & Airdrops, X activities, Telegram, Discord, Cat Lovers Club bonuses. \\
+\rowcolor{brandLight} Staking \& Rewards & 20\% & 20,000,000,000 & Staking programs/bonuses for long-term holders (from Nov 2025). \\
+NFT Ecosystem & 15\% & 15,000,000,000 & Reserve for Meme Vault collection and NFT initiatives. \\
+\rowcolor{brandLight} Team & 7\% & 7,000,000,000 & Vesting team (12 mo cliff + 24 mo unlock). \\
+Marketing & 3\% & 3,000,000,000 & Campaigns on X, TikTok, AMAs, Solana partnerships. \\
+\rowcolor{brandLight} Project Reserve & 5\% & 5,000,000,000 & Future developments and unforeseen expenses. \\
+\bottomrule
+\end{longtable}
+
+% --- Team ---
+\section{Team}
+
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+    \textbf{\large Alexander Zou} \\ \textit{CEO \& Founder} \\
+    \footnotesize
+    \textbf{Exp:} 7+ years in crypto, Solana/Ethereum launches. \\
+    \textbf{Role:} Strategy, tokenomics, partnerships. \\
+    \textbf{Quote:} ``TERC20 is a superhero that saves, but is ready to conquer the market!'' \\
+    \href{https://www.linkedin.com/in/alexander-zou}{LinkedIn Profile}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \textbf{\large Jacob Shamoun} \\ \textit{CTO \& Lead Developer} \\
+    \footnotesize
+    \textbf{Exp:} Solana smart contract specialist, DeFi protocols. \\
+    \textbf{Role:} Token/NFT marketplace dev, security. \\
+    \textbf{Quote:} ``Code should be fast, like a superhero chasing a laser!'' \\
+    \href{https://www.linkedin.com/in/jacob-shamoun}{LinkedIn Profile}
+\end{minipage}
+
+\vspace{0.8cm}
+
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+    \textbf{\large Mansi Rastogi} \\ \textit{CMO \& Marketing} \\
+    \footnotesize
+    \textbf{Exp:} Viral marketing expert, meme tokens on X/TikTok. \\
+    \textbf{Role:} Campaigns, memes, community dev. \\
+    \textbf{Quote:} ``Superheroes and memes — that's TERC20's formula for success!'' \\
+    \href{https://www.linkedin.com/in/mansi-rastogi}{LinkedIn Profile}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \textbf{\large Rudi F.} \\ \textit{Creative Director} \\
+    \footnotesize
+    \textbf{Exp:} Artist, created successful NFT collections. \\
+    \textbf{Role:} TetheCat Meme Vault design, visual style. \\
+    \textbf{Quote:} ``Every NFT is a superhero with a unique soul.'' \\
+    \href{https://www.linkedin.com/in/rudi-f}{LinkedIn Profile}
+\end{minipage}
+
+% --- Disclaimer ---
+\vspace{1.5cm}
+\begin{center}
+\rule{0.6\textwidth}{0.5pt}
+\end{center}
+\section*{Disclaimer}
+\footnotesize
+TERC20 has no relation with the official Tether USD (USDT) project. This project is independent and developed by the TERC20 team. Participation involves risk; please conduct your own research.
+
+\end{document}
